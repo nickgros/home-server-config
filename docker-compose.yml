@@ -42,6 +42,8 @@ services:
   zigbee2mqtt:
     container_name: zigbee2mqtt
     image: koenkk/zigbee2mqtt
+    depends_on:
+      - mosquitto
     restart: unless-stopped
     volumes:
       - ./etc-zigbee2mqtt:/app/data

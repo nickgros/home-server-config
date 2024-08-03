@@ -1,2 +1,12 @@
 .env
-etc-*/
+
+# In general, do not store persistence for containers
+etc-dnsmasq.d/*
+etc-home-assistant/*
+etc-pihole/*
+etc-mosquitto/*
+etc-zigbee2mqtt/*
+
+# Commit these config files
+!etc-mosquitto/mosquitto.conf
+!etc-zigbee2mqtt/configuration.yaml
