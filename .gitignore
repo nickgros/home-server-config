@@ -5,6 +5,7 @@ etc-dnsmasq.d/*
 etc-home-assistant/*
 etc-pihole/*
 etc-mosquitto/*
+etc-syncthing/*
 etc-zigbee2mqtt/*
 
 # Commit these config files
