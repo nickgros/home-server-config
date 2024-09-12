@@ -1,17 +1,10 @@
 .env
 
 # In general, do not commit persistence for containers
-etc-dnsmasq.d/*
-etc-home-assistant/*
-etc-pgdata/*
-etc-pihole/*
-etc-mosquitto/*
-etc-synapse/*
-etc-syncthing/*
-etc-zigbee2mqtt/*
+*/data
 
 # Commit these config files
-!etc-mosquitto/mosquitto.conf
-!etc-synapse/chat.nickgros.com.log.config
-!etc-synapse/homeserver.yaml
-!etc-zigbee2mqtt/configuration.yaml
+!mosquitto/data/mosquitto.conf
+!synapse/data/chat.nickgros.com.log.config
+!synapse/data/homeserver.yaml
+!zigbee2mqtt/data/configuration.yaml

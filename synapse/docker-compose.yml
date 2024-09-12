@@ -1,0 +1,13 @@
+services:
+  synapse:
+    image: matrixdotorg/synapse
+    restart: unless-stopped
+    environment:
+      SYNAPSE_SERVER_NAME: "${SYNAPSE_SERVER_NAME}"
+      SYNAPSE_REPORT_STATS: "no"
+      SYNAPSE_HTTP_PORT: 8008
+    volumes:
+      - ./data:/data
+    ports:
+      # Frontend port
+      - 8008:8008
