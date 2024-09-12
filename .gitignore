@@ -1,10 +1,10 @@
 .env
 
 # In general, do not commit persistence for containers
-*/data
+**/data/*
 
 # Commit these config files
-!mosquitto/data/mosquitto.conf
-!synapse/data/chat.nickgros.com.log.config
-!synapse/data/homeserver.yaml
-!zigbee2mqtt/data/configuration.yaml
+!**/mosquitto/data/mosquitto.conf
+!**/synapse/data/chat.nickgros.com.log.config
+!**/synapse/data/homeserver.yaml
+!**/zigbee2mqtt/data/configuration.yaml
