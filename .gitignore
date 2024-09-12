@@ -6,9 +6,12 @@ etc-home-assistant/*
 etc-pgdata/*
 etc-pihole/*
 etc-mosquitto/*
+etc-synapse/*
 etc-syncthing/*
 etc-zigbee2mqtt/*
 
 # Commit these config files
 !etc-mosquitto/mosquitto.conf
+!etc-synapse/chat.nickgros.com.log.config
+!etc-synapse/homeserver.yaml
 !etc-zigbee2mqtt/configuration.yaml
