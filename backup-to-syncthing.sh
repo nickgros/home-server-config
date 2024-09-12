@@ -6,6 +6,7 @@ sudo tar --exclude="\'$SERVER_CONFIG_DIR/etc-syncthing/home-server-backup\'" -cz
         "$SERVER_CONFIG_DIR/etc-dnsmasq.d" \
         "$SERVER_CONFIG_DIR/etc-home-assistant" \
         "$SERVER_CONFIG_DIR/etc-mosquitto" \
+        "$SERVER_CONFIG_DIR/etc-pgdata" \
         "$SERVER_CONFIG_DIR/etc-pihole" \
         "$SERVER_CONFIG_DIR/etc-syncthing/config" \
         "$SERVER_CONFIG_DIR/etc-zigbee2mqtt"

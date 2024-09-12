@@ -1,8 +1,9 @@
 .env
 
-# In general, do not store persistence for containers
+# In general, do not commit persistence for containers
 etc-dnsmasq.d/*
 etc-home-assistant/*
+etc-pgdata/*
 etc-pihole/*
 etc-mosquitto/*
 etc-syncthing/*
